@@ -6,9 +6,13 @@
     </a>
 
     <ul class="nav nav-pills">
-        <li class="nav-item"><a href="/" class="nav-link">Domů</a></li>
-        <li class="nav-item"><a href="/ucastnici/" class="nav-link">Účastníci</a></li>
-        <li class="nav-item"><a href="/lektori/" class="nav-link">Lektoři</a></li>
-        <li class="nav-item"><a href="/lekce/" class="nav-link">Lekce</a></li>
+        [@link text="Domů" url="/" /]
+        [@link text="Účastníci" url="/ucastnici/" /]
+        [@link text="Lektoři" url="/lektori/" /]
+        [@link text="Lekce" url="/lekce/" /]
     </ul>
 </header>
+
+[#macro link text url]
+    <li class="nav-item"><a href="${url}" class="nav-link ${(url == springMacroRequestContext.requestUri)?string("active", "")}">${text}</a></li>
+[/#macro]
