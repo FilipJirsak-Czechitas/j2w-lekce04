@@ -17,7 +17,7 @@
             <p class="card-text">Místo: ${lekce.misto}</p>
         </div>
         <div class="card-footer text-body-secondary">
-            ${lekce.datum.format("LONG_DATE")} ${lekce.casOd.format("SHORT_TIME")}–${lekce.casDo.format("SHORT_TIME")}
+            ${lekce.datum?date} ${lekce.casOd?time}–${lekce.casDo?time}
         </div>
     </div>
 </div>

@@ -26,8 +26,8 @@
                 <tr>
                     <td>${lekce?counter}.</td>
                     <td>${lekce.nazev}</td>
-                    <td>${lekce.datum.format("LONG_DATE")}</td>
-                    <td>${lekce.casOd.format("SHORT_TIME")}–${lekce.casDo.format("SHORT_TIME")}</td>
+                    <td>${lekce.datum?date}</td>
+                    <td>${lekce.casOd?time}–${lekce.casDo?time}</td>
                     <td>${lekce.misto}</td>
                     <td><a href="/lekce/detail/${lekce?index}" class="btn btn-primary">Detail</a></td>
                 </tr>
