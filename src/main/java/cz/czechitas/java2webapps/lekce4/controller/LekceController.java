@@ -20,11 +20,11 @@ public class LekceController {
   private final LocalTime casDo = LocalTime.of(20, 30);
 
   private final List<Lekce> seznamLekci = List.of(
-          new Lekce("Vstup", "Mech a kapradí", zacatekKurzu.minusWeeks(0), casOd, casDo),
-          new Lekce("Výstup", "Mech a kapradí", zacatekKurzu.minusWeeks(1), casOd, casDo),
-          new Lekce("Příkazy", "Mech a kapradí", zacatekKurzu.minusWeeks(2), casOd, casDo),
-          new Lekce("Podmínky", "Mech a kapradí", zacatekKurzu.minusWeeks(3), casOd, casDo),
-          new Lekce("Cykly", "Mech a kapradí", zacatekKurzu.minusWeeks(4), casOd, casDo)
+          new Lekce("Vstup", "Mech a kapradí", zacatekKurzu.plusWeeks(0), casOd, casDo),
+          new Lekce("Výstup", "Mech a kapradí", zacatekKurzu.plusWeeks(1), casOd, casDo),
+          new Lekce("Příkazy", "Mech a kapradí", zacatekKurzu.plusWeeks(2), casOd, casDo),
+          new Lekce("Podmínky", "Mech a kapradí", zacatekKurzu.plusWeeks(3), casOd, casDo),
+          new Lekce("Cykly", "Mech a kapradí", zacatekKurzu.plusWeeks(4), casOd, casDo)
   );
 
   @GetMapping("/")
