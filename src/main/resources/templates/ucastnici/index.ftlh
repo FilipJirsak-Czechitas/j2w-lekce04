@@ -27,7 +27,7 @@
             <td>Medvídek</td>
             <td>Pú</td>
             <td>Stokorcový les</td>
-            <td><a href="/ucastnici/detail/1" class="btn btn-primary">Detail</a></td>
+            <td><a href="/ucastnici/1" class="btn btn-primary">Detail</a></td>
         </tr>
         <tr>
             <td>2</td>
@@ -35,7 +35,7 @@
             <td>Čarodějnice</td>
             <td>Malá</td>
             <td><em>neuvedeno</em></td>
-            <td><a href="/ucastnici/detail/2" class="btn btn-primary">Detail</a></td>
+            <td><a href="/ucastnici/2" class="btn btn-primary">Detail</a></td>
         </tr>
         </tbody>
     </table>
